@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { loginUrl } from '../spotify'
 const Container=styled.div`
  display: grid;
  align-items: centre;
@@ -35,7 +35,7 @@ function Login() {
   return (
     <Container>
         <Image src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg" />
-        <Butn>Login with Spotify</Butn>
+        <Butn href={loginUrl}>Login with Spotify</Butn>
     </Container>
   )
 }
