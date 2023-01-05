@@ -13,14 +13,18 @@ function App() {
     const curr_token=hash.access_token;
     if(curr_token){
     setToken(curr_token);
+    spotify.setAccessToken(curr_token)
     }
   },[]);
 
   return (
     <div className="app">
     
-      <Login />
-
+    {
+     token?
+     <h1>hiiiii</h1>
+     :
+     <Login />}
     </div>
   );
 }
