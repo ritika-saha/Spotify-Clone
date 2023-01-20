@@ -40,6 +40,10 @@ function Sidebar() {
           <br/>
           <Title>Playlists</Title>
           <Separator />
+          <SidebarOptions title="Hiphop" />
+          <SidebarOptions title="Rock" />
+          <SidebarOptions title="Alt-metal" />
+          
         </Container>
   )
 }

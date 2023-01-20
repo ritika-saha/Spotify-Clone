@@ -14,17 +14,24 @@ transition: 200ms color ease-in;
 `
 const IconContainer=styled.div`
 margin-right: 30px;
-margin-left:10px;
+margin-left:6px;
 `
-
+const Para=styled.p`
+font-size: 14px;
+margin-left: 13px;
+`
 function SidebarOptions({title,Icon}) {
   return (
     <Container>
-      <IconContainer>
-      <Icon />
-      </IconContainer>
+      
+        {Icon && 
+        <IconContainer>
+          <Icon />
+        </IconContainer>
+        }
+      
             
-            <p>{title}</p>
+            <Para>{title}</Para>
     </Container>
   )
 }
