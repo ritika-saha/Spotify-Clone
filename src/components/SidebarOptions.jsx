@@ -13,7 +13,7 @@ transition: 200ms color ease-in;
 }
 `
 const IconContainer=styled.div`
-margin-right: 30px;
+margin-right: 5px;
 margin-left:6px;
 `
 const Para=styled.p`
