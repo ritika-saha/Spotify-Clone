@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SidebarOptions from './SidebarOptions'
 import { Home, LibraryBooks, Search } from '@mui/icons-material'
+import { useDataLayerValue } from '../DataLayer'
 
 const Container=styled.div`
 height: 100vh;
@@ -31,6 +32,7 @@ margin: 10px auto;
 
 
 function Sidebar() {
+  const [{playlists}]=useDataLayerValue();
   return (
         <Container>
           <Image src="https://www.pngkey.com/png/full/190-1907978_spotify-logo-png-white-spotify-logo-white-transparent.png"></Image>
@@ -40,9 +42,11 @@ function Sidebar() {
           <br/>
           <Title>Playlists</Title>
           <Separator />
-          <SidebarOptions title="Hiphop" />
-          <SidebarOptions title="Rock" />
-          <SidebarOptions title="Alt-metal" />
+
+          {playlists?.items.map((playlist)=>(<SidebarOptions title={playlist.name}/>))}
+          
+          
+
           
         </Container>
   )

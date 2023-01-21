@@ -10,9 +10,30 @@ background-color: #330033;
 padding: 20px;
 color: white;
 `
+
+const Left=styled.div``
+
+const Right=styled.div``
+
+const Center=styled.div``
+
 function Footer() {
   return (
-    <Container>Footer</Container>
+    <Container>
+      
+      <Left>
+          <p>Song album</p>
+      </Left>
+
+      <Center>
+          <p>player controls</p>
+      </Center>
+
+      <Right>
+          <p>volume controls</p>
+      </Right>
+
+    </Container>
   )
 }
 
