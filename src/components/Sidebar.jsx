@@ -43,9 +43,9 @@ function Sidebar() {
           <Title>Playlists</Title>
           <Separator />
 
-          {playlists?.items.map((playlist)=>(<SidebarOptions title={playlist.name}/>))}
           
           
+
 
           
         </Container>
