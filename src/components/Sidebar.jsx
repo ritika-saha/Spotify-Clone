@@ -45,8 +45,9 @@ function Sidebar() {
 
           
           
+          {playlists && playlists?.items?.map((playlist)=>(<SidebarOptions title={playlist?.name}/>))}  
 
-
+          
           
         </Container>
   )

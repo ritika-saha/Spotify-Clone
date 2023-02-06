@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Player from './components/Player';
 import { getTokenFromResponse } from './spotify';
 import { useDataLayerValue } from './DataLayer';
+import { StopCircle } from '@mui/icons-material';
 
 const spotify=new SpotifyWebApi();
 function App() {
@@ -38,6 +39,13 @@ function App() {
         playlists:playlists,
       });
     });
+
+    spotify.getPlaylist("37i9dQZEVXcVhn4xm92pOK").then(response=>(
+      dispatch({
+        type:"SET_DISCOVER_WEEKLY",
+        discover_weekly:response,
+      })
+    ));
     
     }
   },[]);

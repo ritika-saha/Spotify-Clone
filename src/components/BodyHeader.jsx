@@ -32,7 +32,7 @@ const Name=styled.h4`
 margin-left:10px;
 `
 function BodyHeader() {
-  const [{user},dispatch]=useDataLayerValue();
+  const [{user}]=useDataLayerValue();
   return (
     <Container>
          <HeaderLeft>
@@ -40,8 +40,8 @@ function BodyHeader() {
                 <Input placeholder='Your fav song is one search away !' type='text' />
          </HeaderLeft>
         <HeaderRight>
-                <Avatar  src={user?.images[0]?.url} alt={user.display_name}/>
-                <Name>{user?.display_name}</Name>
+        <Avatar  src={user?.images[0]?.url} alt={user?.display_name}/>
+                <Name>{user?.display_name}</Name>   
         </HeaderRight>
     </Container>
   )
