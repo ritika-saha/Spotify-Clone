@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import BodyHeader from './BodyHeader'
 
 const Container=styled.div`
 height: 100vh;
@@ -9,9 +10,11 @@ background: linear-gradient(transparent, rgba(0, 0, 0, 1));
   color:white;
   padding:30px;
 `
-function Body() {
+function Body({spotify}) {
   return (
-    <Container>Body</Container>
+    <Container>
+      <BodyHeader spotify={spotify}/>
+    </Container>
   )
 }
 
