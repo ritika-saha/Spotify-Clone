@@ -1,3 +1,7 @@
+# Preview of the Spotify clone
+<img width="953" alt="spo" src="https://user-images.githubusercontent.com/72276256/217105918-959ffda7-cb5d-422d-8117-4d11a27dbf3b.png">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
